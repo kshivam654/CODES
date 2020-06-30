@@ -1,5 +1,9 @@
-include <stdio.h>  
-void main()  
+#include<stdio.h>
+int main()  
 {   
-    printf("enter array:"); 
+    int a[5] = {1,2,3,4,5};
+    a[-1] = 9;
+    
+    printf("%d", a[4]);
+    return 0;
 }
