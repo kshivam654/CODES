@@ -1,9 +1,9 @@
 import java.util.Scanner;
-interface A{
+interface AClass{
     int x = 0;
     public void print();
 }
-abstract class B implements A{
+abstract class B implements AClass{
     public void print() {
         System.out.println("Shivam");
     }
@@ -22,6 +22,7 @@ public class test extends B{
         } catch(LinkageError linkageError){
             System.out.println("Error found");
         } finally{
+
             System.out.println("this needs to execute");
         }
         
