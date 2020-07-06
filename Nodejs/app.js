@@ -1,7 +1,16 @@
 // const http = require('http'); --> removed as the app.listen(); works for an alternatively
 const express = require('express');
 
+const bodyParser = require('body-parser');
+
+const adminRoutes = require('./routes/admin');
+
+const shopRouters = require('./routes/shop');
+
 const app = express();
+
+
+app.use(bodyParser.urlencoded({extended: false}));
 
 // commented this dummy request handling out as its not doing anything it was to show how to jmup from one request to another lol
 // app.use((request, respond, next) => {
@@ -9,25 +18,18 @@ const app = express();
 //     next(); // allows requesto to go to another middlewherer
 // });
 
-//this block is added before the other use as the process in nodejs use top to down approach the any url is taken as / as the first pattern must match...
-// if another link is passed the default use with '/' is called .. .crazy stuff
-app.use('/shivamhome', (request, respond, next) => {
-    console.log('In the  another middlewhere');
-    //.. handle the request
-    respond.write('<h1>this is the special page for riya</h1>');
+app.use('/admin', adminRoutes);
 
-
-});app.use('/', (request, respond, next) => {
-    console.log('In the  another middlewhere');
-    //.. handle the request
-    respond.write('<h1>Hello Shivam its Express</h1>');
-});
+app.use(shopRouters);
 
 // const routes = require('./routes');
 // console.log(routes.someText);
 // const server = http.createServer(routes.handler);
 
-
+//for any random page to show 404 page not found
+app.use('/', (request, respond, next) =>{
+    respond.status(404).send('<h1>Page not found!</h1>');
+});
 
 // const server = http.createServer(app);
 
