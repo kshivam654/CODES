@@ -5,11 +5,13 @@ const path = require('path');
 
 const bodyParser = require('body-parser');
 
-const adminRoutes = require('./routes/admin');
+const adminData = require('./routes/admin');
 const shopRouters = require('./routes/shop');
 
 const app = express();
 
+app.set('view engine', 'pug');
+app.set('views', 'views');
 
 app.use(bodyParser.urlencoded({extended: false}));
 
@@ -21,7 +23,7 @@ app.use(bodyParser.urlencoded({extended: false}));
 
 app.use(express.static(path.join(__dirname, 'public')))
 
-app.use('/admin', adminRoutes);
+app.use('/admin', adminData.routes);
 
 app.use(shopRouters);
 
@@ -39,4 +41,4 @@ app.use('/', (request, respond, next) =>{
 
 // server.listen(3000);
 //  or we can sorten this to.
-app.listen(3000);
+app.listen(8080);
