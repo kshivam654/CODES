@@ -34,7 +34,7 @@ app.use(shopRouters);
 
 //for any random page to show 404 page not found
 app.use('/', (request, respond, next) =>{
-    respond.status(404).sendFile(path.join(__dirname, 'views', '404.html'));
+    respond.status(404).render('404', {pageTitle: 'Page Not Found'});
 });
 
 // const server = http.createServer(app);

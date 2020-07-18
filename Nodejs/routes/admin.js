@@ -12,8 +12,8 @@ const products = [];
 // if another link is passed the default use with '/' is called .. .crazy stuff
 router.get('/add-product', (request, respond, next) => {
     //.. handle the request
-    respond.sendFile(path.join(rootDir, 'views', 'add-product.html'));
-
+    // respond.sendFile(path.join(rootDir, 'views', 'add-product.html'));
+    respond.render('add-product', {pageTitle: 'Add Product', path: '/admin/add-product'});
 });
 router.post('/add-product', (request, respond, next) =>{
     // console.log(request.body);
