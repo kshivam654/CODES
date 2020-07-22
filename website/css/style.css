@@ -18,23 +18,41 @@ div p {
 
 /* CSS classes and IDs example */
 /* # for the id's */
-#main{
+/* #main{
     color: pink;
     font-size: 25px;
 }
 
 /* . for classes */
-.content{
+/* .content{
     color: black;
     background-color: pink;
     font-size: 20px;
-}
+} */ 
 
 /* CSS Box model Example */
-h1{
+/* h1{
     width: 250px;
     height: 50px;
     padding: 10px 10px 10px 10px;
     border:  5px solid green;
     margin: 20px 10px 60px 40px;
+} */
+/* CSS Positioning */
+/* #parent_div{
+    height: 400px;
+    width: 400px;
+    background-color: red;
+    margin: 100px auto;
+    position: relative;
 }
+#child_div{
+    height: 200px;
+    width: 200px;
+    background-color: pink;
+    position: relative;
+    top: 20px;
+    right: 40px;
+    position: fixed;
+    margin: 50px auto;
+} */
