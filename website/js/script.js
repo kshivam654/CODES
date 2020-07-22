@@ -41,5 +41,5 @@ $(function(){
 
 $(window).on('load', function(){
     //when the window is fully loaded means the content the image the all files of the window is totally ready including graphics while the document().ready() is invloked a bit earlier.
-    alert('window is loaded')
+    // alert('window is loaded')
 })

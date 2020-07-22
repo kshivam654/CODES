@@ -56,3 +56,17 @@ div p {
     position: fixed;
     margin: 50px auto;
 } */
+
+/* Bootstrap Grid Examples*/
+.col-bg-red{
+    background-color: red;
+}
+.col-bg-pink{
+    background-color: pink;
+}
+.col-bg-yellow{
+    background-color: yellow;
+}
+.col-bg-blue{
+    background-color: blue;
+}
