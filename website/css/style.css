@@ -1,9 +1,21 @@
+/*===========================================
+Default Theme
+---------------------------------------------
+Fonts: Raleway & Open Sans
+---------------------------------------------
+Colors:
+    Moon Yellow:        #f4c613
+    Grey:               #212226
+    White Smoke:        #f4f4f4
+    Black:              #000
+=============================================*/
+
+
 /* Basic CSS Selector Examples */
 /* h1 {
-    color: yellowgreen;
-    font-size: 45px;
-}
-
+    font-family: "Raleway", sans-serif;
+} */
+/*
 p {
     color: white;
     background-color: hotpink;
@@ -58,7 +70,7 @@ div p {
 } */
 
 /* Bootstrap Grid Examples*/
-.col-bg-red{
+/* .col-bg-red{
     background-color: red;
 }
 .col-bg-pink{
@@ -69,4 +81,4 @@ div p {
 }
 .col-bg-blue{
     background-color: blue;
-}
+} */
