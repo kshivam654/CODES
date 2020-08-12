@@ -119,6 +119,7 @@ section{
     font-size: 17px;
     font-weight: 100;
     margin: 8px 0 30px 0;
+    user-select: none;
 }
 /*============================================
                     Button

@@ -1,16 +1,25 @@
 {
 	"folders": [
 		{
-			"path": ".."
+			"path": "c:\\Users\\Sharma\\Desktop\\CodeVita"
 		},
 		{
-			"path": "c:\\Users\\Sharma\\Desktop\\CodeVita"
+			"path": "..\\..\\Nodejs Projects"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "..\\website"
+		},
+		{
+			"path": ".."
 		}
 	],
 	"settings": {
 		"files.associations": {
 			"vector": "cpp"
 		},
-		"liveServer.settings.multiRootWorkspaceName": "CODES"
+		"liveServer.settings.multiRootWorkspaceName": "website"
 	}
 }
